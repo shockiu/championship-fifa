@@ -34,6 +34,7 @@ body {
     background-image: linear-gradient(var(--background-color-top) 30%, var(--background-color) 30%);
     background-repeat: no-repeat;
     transition: all 2s ease;
+    font-family: $font-family;
 }
 
 body::-webkit-scrollbar {
