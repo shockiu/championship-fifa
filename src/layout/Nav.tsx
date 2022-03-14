@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../styles/main.scss';
 
 export const Nav = () => {
     return(

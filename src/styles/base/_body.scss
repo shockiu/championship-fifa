@@ -5,33 +5,33 @@
 */
 
 :root {
-    --background-color: $back-ground-lg;
-    --background-color-top: $back-ground-top-lg;
-    --card-background: $card-back-ground-lg;
-    --card-background-hover: $card-background-hover-lg;
-    --text-color-primary: $text-color-primary-lg;
-    --text-color-sencondary: $text-color-sencondary-lg;
-    --bg-theme-switcher :  $bg-theme-switcher;
-    --circle-color: $circle-color-lg;
-    --transition-speed: 600ms;
+  --background-color: hsl(0, 0%, 100%);
+  --background-color-top: hsl(225, 100%, 98%);
+  --card-background: hsl(228, 50%, 96%);
+  --card-background-hover: hsl(231, 19%, 86%);
+  --text-color-primary: hsl(228, 12%, 44%);
+  --text-color-sencondary: hsl(230, 17%, 14%);;
+  --circle-color: hsl(225, 100%, 98%);
+  --bg-theme-switcher : linear-gradient(to left top, hsl(210, 78%, 56%), hsl(146, 68%, 55%));;
+  --transition-speed: 600ms;
     font-size: 16px;
 }
 
 body.dark-theme {
-    --background-color: $back-ground-dk;
-    --background-color-top: $back-ground-top-dk;
-    --card-background: $card-back-ground-dk;
-    --card-background-hover: $card-background-hover-dk;
-    --text-color-primary: $text-color-primary-dk;
-    --text-color-sencondary: $text-color-sencondary-dk;
-    --bg-theme-switcher : $bg-theme-switcher;
-    --circle-color: $circle-color-dk;
+    --background-color: hsl(230, 17%, 14%);
+    --background-color-top: hsl(232, 19%, 15%);
+    --card-background: hsl(228, 28%, 20%);
+    --card-background-hover: hsl(233, 19%, 26%);
+    --text-color-primary: hsl(228, 34%, 66%);
+    --text-color-sencondary: hsl(0, 0%, 100%);
+    --circle-color: hsl(232, 19%, 15%);
+    --transition-speed: 600ms;
     font-size: 16px;
 }
 
 body {
     min-height: 100vh;
-    background-image: linear-gradient(var(--background-color-top) 30%, var(--background-color) 30%);
+    background-image: var(--background-color-top);
     background-repeat: no-repeat;
     transition: all 2s ease;
     font-family: $font-family;
@@ -48,77 +48,3 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background: #6649b8;
 }  
-
- 
-  
-  
-  /* Small screens */
-  @media only screen and (max-width: 600px) {
-    .navbar {
-      bottom: 0;
-      width: 100vw;
-      height: 5rem;
-      overflow: scroll;
-    }
-  
-    .logo {
-      display: none;
-    }
-  
-    .navbar-nav {
-      flex-direction: row;
-    }
-  
-    .nav-link {
-      justify-content: center;
-    }
-  
-    main {
-      margin: 0;
-    }
-  }
-  
-  /* Large screens */
-  @media only screen and (min-width: 600px) {
-    .navbar {
-      top: 0;
-      left: 0;
-      width: 5rem;
-      height: 100vh;
-    }
-  
-    .navbar:hover {
-      width: 16rem;
-    }
-  
-    .navbar:hover .link-text {
-      display: inline;
-    }
-  
-    .navbar:hover .logo svg
-    {
-      margin-left: 11rem;
-    }
-  
-    .navbar:hover .logo-text
-    {
-      left: 0px;
-    }
-  }
-  
-  .theme-icon {
-    display: none;
-  }
-  
-  .dark #darkIcon {
-    display: block;
-  }
-  
-  .light #lightIcon {
-    display: block;
-  }
-  
-  .solar #solarIcon {
-    display: block;
-  }
-  
